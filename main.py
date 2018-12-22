@@ -3,12 +3,15 @@ from PIL import Image
 from collections import Counter
 import os
 files = []
-for file in os.listdir('./input_image'):
+dir_name = './'
+
+dir_name += input("enter input-folder name : ")
+for file in os.listdir(dir_name):
     files.append(file)
 
 img_data = []
 for file_name in files:
-    file = './input_image/'+file_name
+    file = dir_name+'/'+file_name
     img_data.append(imread.open_image(file))
 
 im = Image.open(file)
@@ -34,6 +37,6 @@ for x in range(i):
                 
 
 output.show()
-output.save('./input_image/output.jpg')
+output.save(dir_name+'/output.jpg')
 print("process complete..!")
 
