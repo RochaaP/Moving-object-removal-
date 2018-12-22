@@ -9,4 +9,4 @@ copy all input amages to input_image folder
 
 run:
 
-  python main.py
+    python main.py
