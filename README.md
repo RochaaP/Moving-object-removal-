@@ -1,7 +1,7 @@
 # Moving-object-removal-
 acadamic project
 
-downlode or clone this project
+download or clone this project
 
 copy all input images to input_image folder
  ## all images are only RGB images
